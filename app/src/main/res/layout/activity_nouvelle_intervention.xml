@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:fillViewport="true"
+    tools:context=".ui.NouvelleInterventionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <TextView
+            android:id="@+id/idTVSelectedTime2"
+            android:layout_width="156dp"
+            android:layout_height="47dp"
+            android:layout_above="@id/idBtnPickTime"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Time"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/idBtnPickTime2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCommentaireNouvelleIntervention" />
+
+        <Button
+            android:id="@+id/idBtnPickTime2"
+            android:layout_width="100dp"
+            android:layout_height="54dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button"
+            android:text="Heure de fin"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/checkboxITNouvelleIntervention"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCommentaireNouvelleIntervention" />
+
+        <Spinner
+        android:id="@+id/spinnerMachineNouvelleIntervention"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerActiviteNouvelleIntervention" />
+
+    <Spinner
+        android:id="@+id/spinnerCDNouvelleIntervention"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMachineNouvelleIntervention" />
+
+        <CheckBox
+            android:id="@+id/checkboxITNouvelleIntervention"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:checked="false"
+            android:text="intervention terminé"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCommentaireNouvelleIntervention" />
+
+    <TextView
+        android:id="@+id/idTVSelectedTime"
+        android:layout_width="200dp"
+        android:layout_height="47dp"
+        android:layout_above="@id/idBtnPickTime"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeconnexionNouvelleIntervention" />
+
+    <Button
+        android:id="@+id/idBtnPickTime"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button"
+        android:text="Heure de début"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toEndOf="@+id/spinnerMachineNouvelleIntervention"
+        app:layout_constraintTop_toBottomOf="@+id/idTVSelectedTime" />
+
+    <Spinner
+        android:id="@+id/spinnerSDNouvelleIntervention"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCDNouvelleIntervention" />
+
+    <Spinner
+        android:id="@+id/spinnerSONouvelleIntervention"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerSDNouvelleIntervention"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCDNouvelleIntervention" />
+
+    <Spinner
+        android:id="@+id/spinnerCONouvelleIntervention"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerCDNouvelleIntervention"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMachineNouvelleIntervention" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Vous êtes connecté en tant que :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLoginNouvelleIntervention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/buttonDeconnexionNouvelleIntervention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button"
+        android:text="Deconnexion"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerActiviteNouvelleIntervention"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginNouvelleIntervention" />
+
+    <EditText
+        android:id="@+id/editTextCommentaireNouvelleIntervention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Commentaire"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSONouvelleIntervention" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMANouvelleIntervention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="machine arrêtée"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkboxITNouvelleIntervention" />
+
+        <CheckBox
+        android:id="@+id/checkBoxCONouvelleIntervention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="changement d'organes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMANouvelleIntervention" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPNouvelleIntervention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:text="pertes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.641"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxCONouvelleIntervention"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerTANouvelleIntervention" />
+
+        <ListView
+            android:id="@+id/listViewIIHNouvelleIntervenant"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxCONouvelleIntervention" />
+
+        <Spinner
+            android:id="@+id/spinnerInterNouvelleIntervention"
+            android:layout_width="147dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listViewIIHNouvelleIntervenant" />
+
+        <Spinner
+            android:id="@+id/spinnerTINouvelleIntervention"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text"
+            app:layout_constraintStart_toEndOf="@+id/spinnerInterNouvelleIntervention"
+            app:layout_constraintTop_toBottomOf="@+id/listViewIIHNouvelleIntervenant" />
+
+        <Button
+        android:id="@+id/buttonIINouvelleIntervenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Ajouter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerTINouvelleIntervention"
+        app:layout_constraintTop_toBottomOf="@+id/listViewIIHNouvelleIntervenant" />
+
+        <Spinner
+            android:id="@+id/spinnerTANouvelleIntervention"
+            android:layout_width="147dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxMANouvelleIntervention"
+            app:layout_constraintTop_toBottomOf="@+id/idTVSelectedTime2" />
+
+        <Button
+            android:id="@+id/buttonAnnulerNouvelleIntervention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Annuler"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerInterNouvelleIntervention" />
+
+        <Button
+            android:id="@+id/buttonValiderNouvelleIntervention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Valider l'intervention"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonAnnulerNouvelleIntervention"
+            app:layout_constraintTop_toBottomOf="@+id/buttonIINouvelleIntervenant" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
